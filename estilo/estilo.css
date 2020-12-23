@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     background: #0c0808;
 }
+
 .bloco-imagem{
     height:90vh;
     background-image: url("../imagens/nuvens.jpeg");
@@ -12,13 +18,53 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 header ul{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    font-family: 'Jura', sans-serif;
+    
+
 }
+
+img.icones-themes{
+    height: 100px;
+    margin-top: 50px;
+}
+img.icones-themes:hover{
+  
+    cursor: pointer;
+    
+}
+p.texto-icones{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    letter-spacing: 2px;
+}
+div#texto-desc{
+    background: linear-gradient(90deg, rgba(254,196,194,1) 0%, rgba(191,228,221,1) 100%);
+    padding: 50px;
+    text-align: center;
+}
+h1#texto-perfils{
+    display: inline;
+    position: relative;
+    font: 100px Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color: rgba(9, 9, 10, 0.823);
+
+}
+h1#texto-perfils::after{
+    content: "PerfilsDestaques";
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    color: rgba(34, 190, 26, 0.5);
+}
+
 li{
-    font-family: 'Roboto Mono', monoespaço;
     padding: 20px;
     color: #ffffffb9;
     font-weight: bolder;    
@@ -28,6 +74,10 @@ li.menu:hover{
     transition: 1s;
     color: #e9dee1;
     background: #ce6e6e;
+}
+li.menu:nth-child(4):hover{
+    font-style: italic;
+    transition: 1s;
 }
 div.rodape{
     height: 400px;
@@ -42,6 +92,7 @@ div#twriter{
     font-family: 'Abril Fatface', cursive;
     padding-top: 280px;
 }
+
 div#twriter::after{
     content: '|';
     margin-left: 5px;
@@ -69,10 +120,24 @@ div#twriter::after{
     justify-content: center;
 }
 .bloco-conteudo-3{
-    background: linear-gradient(90deg, rgba(254,196,194,1) 0%, rgba(191,228,221,1) 100%);
-    height: 600px;    
-    border: 2px solid #000000;
-    margin-top: 40px;
+    display: flex;
+    margin-top: 50px;
+    height: 500px;
+    padding: 40px;
+}
+.item{
+    width: 50%;
+    padding: 40px;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+
+.item:hover{
+    background-color: #392332;
+    transition: 1s;
+    color: #ffffff;
+    cursor: pointer;
 }
 .conteudo-primeiro-2{
     height: 600px;
@@ -125,17 +190,17 @@ div#twriter::after{
 h1#texto-auto{
     padding:10px;
     text-align: center;
-    font-family: 'Roboto Mono', monoespaço;
     color: #141212;
 }
 p#texto-kushcode{
-    font-family: 'Roboto Mono', monoespaço;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px;
     font-size: 20pt;
     color: #110f0f;
 
 }
+
 .texto-ini{
-    padding:40px;
     text-align: center;
 }
 .rodape{
@@ -143,6 +208,7 @@ p#texto-kushcode{
     align-items: center;
     justify-items: center;
 }
+
 .icons{
     color: #ffffff; 
     text-align: left;
@@ -171,10 +237,7 @@ h2{
 .linha-vertical{
     border-top: 1px solid;
 }
-.texto-icon{
-    background-color: green;
-    height: 40px;
-}
+
 p{
     margin-top: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -187,7 +250,7 @@ p{
 .link-img:hover{
     cursor: pointer;
 }
-input[type="button"]{
+.saber-mais{
     height: 40px;
     width: 140px;
     margin-top: 20px;
@@ -198,7 +261,7 @@ input[type="button"]{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-input[type="button"]:hover{
+.saber-mais:hover{
     background-color: #000;
     transition: 1s;
     color: #ffffff;
@@ -206,11 +269,26 @@ input[type="button"]:hover{
 
 }
 #info-cadastro{
+    display: flex;
     height: 600px;
+    justify-content: space-between;
     background: linear-gradient(90deg, rgba(254,196,194,1) 0%, rgba(191,228,221,1) 100%);
-
+    border: 1px solid black;
 }
-
+#informacoes{
+    border: 4px solid black;
+    height: 150px;
+    width: 150px;
+}
+#informacoes-img{
+    background-image: url("../imagens/arte.jpeg");
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 50%;
+    float:right;
+}
 .texto-lorem{
     text-align: justify;
     margin: 10px;
