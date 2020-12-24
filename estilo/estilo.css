@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
-html {
-    scroll-behavior: smooth;
-  }
-body{
-    background: #0c0808;
-}
+
 
 .bloco-imagem{
     height:90vh;
@@ -80,7 +76,7 @@ li.menu:nth-child(4):hover{
     transition: 1s;
 }
 div.rodape{
-    height: 400px;
+    height: 300px;
 }
 /*
     Inicio da configuração de texto T-writer
@@ -122,17 +118,17 @@ div#twriter::after{
 .bloco-conteudo-3{
     display: flex;
     margin-top: 50px;
+    justify-content: center;
     height: 500px;
     padding: 40px;
 }
 .item{
-    width: 50%;
+    width: 200px;
     padding: 40px;
     margin: 10px;
     border: 1px solid black;
 
 }
-
 .item:hover{
     background-color: #392332;
     transition: 1s;
@@ -187,18 +183,53 @@ div#twriter::after{
     text-align: justify;
     padding:50px;
 }
-h1#texto-auto{
-    padding:10px;
-    text-align: center;
-    color: #141212;
+
+.conteudos-de-textos{
+    border: 4px solid black;
+    height: 500px;
+    margin-top: 30px;
 }
-p#texto-kushcode{
-    font-family: 'Josefin Sans', sans-serif;
-    letter-spacing: 3px;
-    font-size: 20pt;
-    color: #110f0f;
+div.texto-inicial{
+    display: flex;
+    justify-content: center;
+}
+.bloco-informacoes{
+    height: 300px;
+    width: 300px;
+    margin-top: -150px;
+    background-color: #332333;
+    border-right: 1px solid #ffffff;
+}
+.bloco-informacoes:hover{
+    background: rgba(255, 0, 0, 0.904);
+    transition: 3s;
+}
+.bloco-informacoes:nth-child(4){
+    border: none;
+}
+.bloco-informacoes:nth-child(1){
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 
 }
+.bloco-informacoes:nth-child(4){
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+p.blocos-textos{
+    color: #ffffff;
+    margin-top: 30px;
+    letter-spacing: 4px;
+    font-style: italic;
+    
+}
+h3.titulos-textos{
+    color: #ffffff;
+    margin-top: 50px;
+}
+
 
 .texto-ini{
     text-align: center;
@@ -206,16 +237,15 @@ p#texto-kushcode{
 .rodape{
     display: flex;
     align-items: center;
+    background: #000000;
     justify-items: center;
 }
 
 .icons{
     color: #ffffff; 
     text-align: left;
-    height:250px;
     width: 250px;
     margin: auto;
-    padding:10px;
 }
 span#freepik{
     font-style: italic;
@@ -236,6 +266,9 @@ h2{
 }
 .linha-vertical{
     border-top: 1px solid;
+}
+.cabecalho{
+    background-color: #000000;
 }
 
 p{
@@ -280,15 +313,7 @@ p{
     height: 150px;
     width: 150px;
 }
-#informacoes-img{
-    background-image: url("../imagens/arte.jpeg");
-    background-size: cover;
-    
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 50%;
-    float:right;
-}
+
 .texto-lorem{
     text-align: justify;
     margin: 10px;
